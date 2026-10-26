@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M1 - The Awakening of the DOM</title>
+  <!-- Ruta apuntando a la carpeta CSS y styles.css -->
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cyber-Oracle & Dice</h1>
+      <p class="subtitle">Misión 1: Manipulación directa del DOM</p>
+    </header>
+
+    <main>
+      <!-- Sección 1: Generador de oráculo -->
+      <section class="card">
+        <h2>1. El Oráculo</h2>
+        <div class="input-group">
+          <label for="username">Tu Nombre:</label>
+          <input type="text" id="username" placeholder="Escribe tu nombre..." autocomplete="off">
+        </div>
+        <button id="btn-oracle">Consultar Oráculo</button>
+        <p id="oracle-result" class="result-text">Introduce tu nombre para descubrir tu destino...</p>
+      </section>
+
+      <!-- Sección 2: Minijuego de Dados -->
+      <section class="card">
+        <h2>2. Juego de Dados Cyberpunk</h2>
+        <div class="dice-container">
+          <div id="dice-player" class="dice">?</div>
+          <span class="vs">VS</span>
+          <div id="dice-cpu" class="dice">?</div>
+        </div>
+        <button id="btn-roll">Lanzar Dados</button>
+        <div id="game-status" class="status-box">¡Pulsa lanzar para jugar!</div>
+        
+        <div class="score-board">
+          <p>Victorias: <strong id="score-win">0</strong></p>
+          <p>Derrotas: <strong id="score-loss">0</strong></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="hint">💡 Pista secreta: Escribe <code>dark</code> en cualquier parte para el Modo Oscuro.</p>
+    </footer>
+  </div>
+
+  <!-- Ruta apuntando a la carpeta js y main.js -->
+  <script src="js/main.js"></script>
+</body>
+</html>
